@@ -18,10 +18,10 @@ Just unzip the zip and copy the 3 batch files to your USB root directory. When y
 (Viral_dna will be updating these apps in the future to be in a single executable to make it easier and nicer to use)
 
 ## Shout Outs
-DNA64 - Helped by adding some tweaks to the scripts. He will be also do some future updates
-QuatroKiller - testing
-bslenul - testing
-Advokaten - being a lazy bastard who came up with the idea
+ - DNA64 - Helped by adding some tweaks to the scripts. He will be also do some future updates
+ - QuatroKiller - testing
+ - bslenul - testing
+ - Advokaten - being a lazy bastard who came up with the idea
 
 
 #### You're welcome world.
