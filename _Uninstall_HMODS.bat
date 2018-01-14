@@ -1,11 +1,12 @@
 @echo off
-
-echo --------------------------------------------------------------
+mode con: cols=80 lines=35  
+color 0A                                          
+echo --------------------------------------------------------------------------------
 echo Swingflip's lazy man HMOD uninstaller v1.0
 echo http://github.com/swingflip
-echo --------------------------------------------------------------
+echo --------------------------------------------------------------------------------
 echo This uninstall your hmods from your console
-echo --------------------------------------------------------------
+echo --------------------------------------------------------------------------------
 echo.
 if exist %cd%hakchi\transfer (
 	echo Transfer Folder already exists, attempting uninstall file create...
@@ -17,11 +18,13 @@ if not exist hakchi\transfer (
 )
 
 rem - Just incase someone is being a tit.
-del %cd%hakchi\transfer\*.* 
+del /F /Q %cd%hakchi\transfer\*.* 
 
 echo all >> %cd%hakchi\transfer\uninstall
 
+echo.
 echo Transfered uninstall command successfully. Just plug in run!
-echo You're welcome world.
-
-pause
+echo You're welcome world :)
+echo.
+echo Press any key to exit...
+pause>nul 2>&1

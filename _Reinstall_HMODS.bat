@@ -1,12 +1,13 @@
 @echo off
-
-echo --------------------------------------------------------------
+mode con: cols=80 lines=35
+color 0A
+echo --------------------------------------------------------------------------------
 echo Swingflip's lazy man HMOD installer v1.0
 echo http://github.com/swingflip
-echo --------------------------------------------------------------
+echo --------------------------------------------------------------------------------
 echo This will transfer your hmods from:
 echo %cd%data\transfer_backup
-echo --------------------------------------------------------------
+echo --------------------------------------------------------------------------------
 echo.
 if not exist %cd%data\transfer_backup (
 	echo ERROR: Couldn't find the data\transfer_backup\ folder in your USB...
@@ -24,11 +25,13 @@ if not exist hakchi\transfer (
 )
 
 rem - Just incase someone is being a tit.
-del %cd%hakchi\transfer\*.* 
+del /F /Q %cd%hakchi\transfer\*.* 
 
 xcopy /y %cd%data\transfer_backup %cd%hakchi\transfer
 
+echo.
 echo Transfered hmods successfully. Just plug in run!
-echo You're welcome world.
-
-pause
+echo You're welcome world :)
+echo.
+echo Press any key to exit...
+pause>nul 2>&1
